@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Chris&#39;s Blog</title>
+  <icon>http://example.com/icon.png</icon>
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-03-25T19:54:06.535Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Chris Yang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CS2 2023年3月24日更新</title>
+    <link href="http://example.com/2023/03/25/Test1/"/>
+    <id>http://example.com/2023/03/25/Test1/</id>
+    <published>2023-03-25T17:40:49.000Z</published>
+    <updated>2023-03-25T19:54:06.535Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;[ Ui ]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;修复了常见的断言。 &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;删除了有限测试的交易合同 UI。 &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修复了检查面板中显示的多个项目。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[ 音频</summary>
+        
+      
+    
+    
+    
+    
+    <category term="CS2" scheme="http://example.com/tags/CS2/"/>
+    
+  </entry>
+  
+</feed>
