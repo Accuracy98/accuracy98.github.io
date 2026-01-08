@@ -17,10 +17,13 @@ menu:
   Archives: /archives/
   About: /about/
 
-widgets:
+
+widget:
   - recent_posts
-  - archive
+  - archives
   - tag
+  # - tagcloud
+
 
 
 
@@ -129,6 +132,7 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
+
 
 
 
