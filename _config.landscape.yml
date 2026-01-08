@@ -5,8 +5,7 @@ menu:
 
 sidebar: right
 
-
-widgets:
+widget:
   - recent_posts
   - archives
   - tag
