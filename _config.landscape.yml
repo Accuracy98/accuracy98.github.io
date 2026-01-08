@@ -17,6 +17,12 @@ menu:
   Archives: /archives/
   About: /about/
 
+widgets:
+  - recent_posts
+  - archive
+  - tag
+
+
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -123,3 +129,4 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
+
