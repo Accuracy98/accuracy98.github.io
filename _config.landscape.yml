@@ -6,10 +6,11 @@ menu:
 sidebar: right
 
 
-widget:
+widgets:
   - recent_posts
   - archives
   - tag
   # - tagcloud
   # - category
+
 
