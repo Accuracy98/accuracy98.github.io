@@ -6,7 +6,7 @@
   <link href="https://blog.accuracy98.com/atom.xml" rel="self"/>
   
   <link href="https://blog.accuracy98.com/"/>
-  <updated>2026-01-08T10:54:45.034Z</updated>
+  <updated>2026-01-08T10:56:44.979Z</updated>
   <id>https://blog.accuracy98.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.accuracy98.com/2023/03/25/Test1/"/>
     <id>https://blog.accuracy98.com/2023/03/25/Test1/</id>
     <published>2023-03-25T17:40:49.000Z</published>
-    <updated>2026-01-08T10:54:45.034Z</updated>
+    <updated>2026-01-08T10:56:44.979Z</updated>
     
     <content type="html"><![CDATA[<p>[ UI ]</p><ul><li><p>修复了常见的断言。 </p></li><li><p>删除了有限测试的交易合同 UI。 </p></li><li><p>修复了检查面板中显示的多个项目。</p></li></ul><p>[ 音频 ]</p><ul><li><p>当用户选择“默认”设备时使用正确的音频设备名称。 </p></li><li><p>将声音投放到小地图远程广播。 </p></li><li><p>降低了一些 dust2 环境的音量。 </p></li><li><p>添加了一些缺失的 ui 声音。</p></li><li><p>降低了闪光弹的眩晕音量和音量回避效果。 </p></li><li><p>减少了手榴弹爆炸的立体声传播。</p></li><li><p>修复了死亡竞赛杀死奖励声音的相位。</p></li></ul><p> </p><p>[ 游戏 ]</p><ul><li><p>修复了各种游戏崩溃。 </p></li><li><p>烟雾弹孔现在相对于第一人称视角是固定的。 </p></li><li><p>掉落在小缝隙中的烟雾弹不再在薄墙的错误一侧引爆。 </p></li><li><p>在竞争性比赛中玩家死后不能再捡起武器。 </p></li><li><p>修复了在团队介绍期间掉落武器的问题。 </p></li><li><p>修复了在团队介绍期间按住并在之后释放时 +voicerecord 卡住的问题。 </p></li><li><p>在比赛结束时发送的聊天消息不再显示玩家为 <em>DEAD</em> 如果他们已经在最后一轮结束时死了。 </p></li><li><p>修复了处理游戏输入键，例如全景有焦点时的 +voicerecord。 </p></li><li><p>添加了netgraph。</p></li></ul><p>[ 图形 ]</p><ul><li><p>修复了 MSAA 的闪烁。 </p></li><li><p>修复了烟雾云体积照明。 </p></li><li><p>修复了禁用 MSAA 时玻璃上的模板问题。 </p></li><li><p>根据社区反馈更新了各种武器饰面。</p></li></ul>]]></content>
     
