@@ -17,12 +17,10 @@ menu:
   Archives: /archives/
   About: /about/
 
-widgets:
+widget:
   - recent_posts
   - archive
   - tag
-
-rss: false
 
 
 
@@ -131,5 +129,6 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
+
 
 
