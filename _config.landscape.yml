@@ -22,6 +22,8 @@ widgets:
   - archive
   - tag
 
+rss: false
+
 
 
 # URL
@@ -129,4 +131,5 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
+
 
