@@ -3,35 +3,47 @@ name: Pages
 on:
   push:
     branches:
-      - main  # default branch
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   pages:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          node-version: 'lts/*'
-      - name: Cache NPM dependencies
-        uses: actions/cache@v3
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          path: node_modules
-          key: ${{ runner.OS }}-npm-cache
-          restore-keys: |
-            ${{ runner.OS }}-npm-cache
-      - name: Install Themes
-        run: | 
-            git submodule init
-            git submodule update
-      - name: Install Dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Deploy
+          node-version: "lts/*"
+          cache: "npm"
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      # - name: Update submodules (optional)
+      #   run: git submodule update --init --recursive
+
+      - name: Build (Hexo clean & generate)
+        run: |
+          npx hexo clean
+          npx hexo generate
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          cname: blog.accuracy98.com
           publish_dir: ./public
+          cname: blog.accuracy98.com
