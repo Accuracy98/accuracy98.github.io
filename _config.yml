@@ -26,10 +26,6 @@ theme_config:
     - recent_posts
     - archives
     - tag
-  widget:
-    - recent_posts
-    - archives
-    - tag
 
 
 
