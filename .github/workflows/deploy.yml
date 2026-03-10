@@ -41,6 +41,14 @@ jobs:
           npx hexo clean
           npx hexo generate
 
+      - name: Debug public output
+        run: |
+          ls -la public | head -n 50
+          echo "index.html bytes:"
+          wc -c public/index.html || true
+          echo "index.html preview:"
+          head -n 20 public/index.html || true      
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
