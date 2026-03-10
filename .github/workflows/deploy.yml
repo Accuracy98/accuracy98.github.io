@@ -41,6 +41,23 @@ jobs:
       # - name: Update submodules (optional)
       #   run: git submodule update --init --recursive
 
+      - name: Ensure landscape theme exists
+        run: |
+          # 1) 先尝试拉 submodule（最规范）
+          git submodule sync --recursive
+          git submodule update --init --recursive --depth 1 || true
+
+          # 2) 如果 submodule 仍然没把 layout 拉下来，就直接 clone 兜底（保证不再白屏）
+          if [ ! -f themes/landscape/layout/index.ejs ]; then
+            echo "Submodule theme missing layout. Cloning landscape theme..."
+            rm -rf themes/landscape
+            git clone --depth 1 https://github.com/hexojs/hexo-theme-landscape themes/landscape
+          fi
+
+          # 3) 最终必须存在 layout，否则直接失败（避免再部署空页面）
+          test -f themes/landscape/layout/index.ejs
+          ls -la themes/landscape/layout | head
+
       - name: Build (Hexo clean & generate)
         run: |
           npx hexo clean
