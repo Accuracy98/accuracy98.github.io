@@ -33,6 +33,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Fetch landscape theme
+        run: |
+          rm -rf themes/landscape
+          git clone --depth 1 https://github.com/hexojs/hexo-theme-landscape themes/landscape
+
       # - name: Update submodules (optional)
       #   run: git submodule update --init --recursive
 
