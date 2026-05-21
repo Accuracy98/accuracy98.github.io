@@ -16,8 +16,7 @@ theme: landscape
 theme_config:
   menu:
     Home: /
-    Archives: /archives/
-    About: /about/
+    Fiction: /fiction/
 
   sidebar: right
 
@@ -78,8 +77,8 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
-  per_page: 2
+  path: fiction
+  per_page: 10
   order_by: -date
 
 per_page: 12
